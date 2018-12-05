@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="container m-5 p-5">
+  	<div class="row text-center">
+    	
+	 		<div id="loader_text" >
+				<h2 id="first">Searching for</h2>
+				<h2 id ="second"> Things to do </h2>
+		 	 </div>
+			  <div class="blobs center-block">
+
+				<div class="blob-center"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+			  </div>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				  <defs>
+					<filter id="goo">
+					  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+					  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+					  <feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				  </defs>
+				</svg>
+	   </div>
+	 </div>
+  <script>
+	  $( document ).ready(function() {
+		  //changes text inside loader cut & copy script to page your page.
+	  	$( "#first" ).replaceWith("<h2>what ever you want</h2>");
+		$( "#second" ).replaceWith("<h2>what ever you want</h2>");
+       });
+	  
+ </script>
+
+</body>
+</html>
